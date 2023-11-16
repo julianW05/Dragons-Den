@@ -1,0 +1,50 @@
+#root {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/*---------LOGIN---------*/
+.login {
+  width: 100%;
+}
+
+.login .background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.login .left {
+  height: 100vh;
+}
+
+.login .right {
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 200px;
+  row-gap: 30px;
+}
+
+.login .right .logo {
+  width: 150px;
+}
+
+.login .right .title {
+  width: 100%;
+}
+
+.login .right .login-button button {
+  background-color: #C22730;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+}
