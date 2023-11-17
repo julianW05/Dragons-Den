@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginLayout from './layouts/LoginLayout'
 import ZiekenhuisLayout from './layouts/ZiekenhuisLayout'
 import AmbulanceLayout from './layouts/AmbulanceLayout'
+import AmbulanceDetails from './layouts/ambulanceDetails'
+
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,12 @@ const router = createBrowserRouter([
   {
     path: "/ambulance",
     element: <AmbulanceLayout />,
+    children: [
+      {
+        path: ":id",
+        element: <AmbulanceDetails />,
+      },
+    ],
   },
 ]);
 
