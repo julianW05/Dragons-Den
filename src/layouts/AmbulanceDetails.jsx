@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { collection, doc, getDoc } from "firebase/firestore";
 import { db } from "../Firebase-config";
+import sign_out from "../functions/Google-signout";
 
 export default function AmbulanceDetails() {
   const { id } = useParams();
@@ -28,6 +29,7 @@ export default function AmbulanceDetails() {
             <p>{meldingDetails.gegevens}</p>
           </>
         )}
+        <button className="loguit" onClick={sign_out}>Log Uit</button>
       </div>
       <div className="right">
       </div>

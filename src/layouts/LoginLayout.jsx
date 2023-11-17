@@ -18,7 +18,8 @@ export default function LoginLayout() {
         if (querySnapshot.empty) {
           const docRef = await addDoc(collection(db, "users"), {
             uid: userData.uid,
-            rol: "ziekenhuis"
+            rol: "ziekenhuis",
+            isadmin: false
           });
           navigate('/ziekenhuis');
         } else {

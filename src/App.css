@@ -152,3 +152,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.ambulance .ambulance-details .left button {
+  background-color: #C22730;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0;
+}
