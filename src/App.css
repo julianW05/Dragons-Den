@@ -37,6 +37,7 @@
   width: 150px;
 }
 
+
 .login .right .title {
   width: 100%;
 }
@@ -158,4 +159,55 @@
   border: none;
   border-radius: 5px;
   padding: 5px 0;
+}
+/* Add this to your CSS file or style block */
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #C22730;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #C22730;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #C22730;
+  border-radius: 4px;
+  background-color: white;
+}
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #C22730;
+  border-radius: 4px;
+  background-color: white;
+}
+button {
+  background-color: #C22730;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A01F28;
 }
